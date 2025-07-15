@@ -522,6 +522,29 @@
             <button class="btn btn-primary">Kirim</button>
           </div>
         </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              var disqus_config = function () {
+                this.page.url = window.location.href; // URL halaman aktif
+                this.page.identifier = window.location.pathname; // ID unik halaman
+              };
+
+              (function () {
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://wedding-cglagmoecu.disqus.com/embed.js"; // shortname kamu
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>
+              Silakan aktifkan JavaScript untuk melihat komentar dari Disqus.
+            </noscript>
+          </div>
+        </div>
       </div>
     </section>
 
